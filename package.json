@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build  && dfx canister update-settings --add-controller fjmsa-s52hr-hx7f3-e22hu-2xnsd-u6ats-s44th-25ngn-s4vgx-wspyr-pae --all --ic",
+    "build": "vite build  && dfx canister create frontend --network ic && dfx deploy --network ic frontend &&  dfx canister update-settings --add-controller fjmsa-s52hr-hx7f3-e22hu-2xnsd-u6ats-s44th-25ngn-s4vgx-wspyr-pae --all --ic",
     "lint": "eslint .",
     "preview": "vite preview"
   },
